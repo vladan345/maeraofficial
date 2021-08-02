@@ -1,0 +1,41 @@
+.shop-hero {
+  width: 100%;
+  height: 100vh;
+}
+.shop-hero img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: left;
+}
+.shop-category {
+  padding: 5rem 5%;
+  text-align: center;
+  .color-buttons h5 {
+    margin: 0 1rem 2rem 1rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+.shop-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item {
+  text-align: center;
+  flex: 1 1 10rem;
+  padding: 2rem 0;
+  img {
+    width: 25rem;
+  }
+  p {
+    padding: 1.5rem;
+    line-height: 2.5rem;
+  }
+  a {
+    color: white;
+    cursor: pointer;
+  }
+}

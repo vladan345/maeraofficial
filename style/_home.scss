@@ -1,0 +1,68 @@
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/index-header.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  @include flex(center, center, column);
+  a {
+    color: white;
+    cursor: pointer;
+  }
+}
+.tour {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5rem 10%;
+  margin: 0 auto;
+}
+.tour-list {
+  @include flex(space-between, center, row);
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+}
+
+.release {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5rem 10%;
+  margin: 10rem auto 0 auto;
+  @include flex(space-aroun, center, column);
+  img {
+    border: solid 10px $background-color;
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+  a {
+    display: inline-block;
+    background: $background-color;
+    color: white;
+  }
+}
+
+.news {
+  padding: 5rem 10%;
+  margin: 0 auto;
+}
+.article {
+  @include flex(space-around, center, row);
+  flex-wrap: no-wrap;
+  padding: 3rem 0;
+  img {
+    flex: 1 1 50rem;
+    margin-right: 2rem;
+  }
+  .article-text {
+    flex: 5 1 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    p {
+      margin: 1.5rem 0;
+    }
+    a {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Minion Pro";
+  src: url("../fonts/MinionPro-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Minion Pro", serif;
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+h1 {
+  font-size: $header1;
+}
+button,
+label,
+input,
+li,
+p {
+  font-size: $text;
+}
+
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+h3:after {
+  display: block;
+  height: 0.2rem;
+  background-color: #fff;
+  content: "";
+  width: 35rem;
+  margin: 2.5rem auto 5rem auto;
+}
+h4,
+h5,
+a,
+li {
+  font-size: $header4;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 1);
+  display: inline-block;
+}
+a:hover {
+  color: $hover-color;
+}
+.button {
+  background: rgba(170, 170, 170, 0);
+  padding: 1.5rem 2rem 1rem 2rem;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  display: inline-block;
+  border-radius: 10rem;
+}
+.button:hover {
+  background: rgba(170, 170, 170, 1);
+}
